@@ -1,14 +1,16 @@
 const express = require('express');
 const morgan = require('morgan');
 const createError = require('http-errors');
-
 require('dotenv').config();
+const authRoute = require('./routes/auth.route');
 
 const app = express();
 
 app.get('/', (_req, res, _next) => {
     res.send('Hello from express');
 });
+
+app.use('/auth', authRoute);
 
 app.use((_res, _req, next) => {
     next(createError.NotFound());
