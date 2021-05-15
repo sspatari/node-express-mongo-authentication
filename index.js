@@ -8,6 +8,8 @@ const authRoute = require('./routes/auth.route');
 
 const app = express();
 app.use(morgan('dev'));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (_req, res, _next) => {
     res.send('Hello from express');
