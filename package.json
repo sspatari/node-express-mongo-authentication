@@ -1,7 +1,7 @@
 {
-    "name": "node-express-mongo-crud-authorization",
+    "name": "node-express-mongo-authentication",
     "version": "1.0.0",
-    "description": "",
+    "description": "Node JS API Authentication using mongo",
     "main": "index.js",
     "scripts": {
         "start": "nodemon index.js",
