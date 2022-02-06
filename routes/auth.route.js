@@ -8,7 +8,6 @@ const {
   signRefreshToken,
   verifyRefreshToken,
 } = require('../helpers/jwt_helper');
-const { create } = require('../models/user.model');
 
 router.post('/register', async (req, res, next) => {
   try {
