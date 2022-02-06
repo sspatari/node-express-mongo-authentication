@@ -9,6 +9,7 @@
     },
     "scripts": {
         "start": "nodemon index.js",
+        "generate:secrets": "node ./helpers/generate_keys.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
